@@ -6,7 +6,8 @@ import './index.css';
 
  const App = () => {
 
-    let [count, setCount] = useState(0);
+    let [count, setCount] = useState(9);
+    let [count2, setCount2] = useState(12);
 
 return (
     <div>
@@ -41,12 +42,12 @@ return (
         <div className = "counter">
             <h1>Tigers</h1>
             <p className ='click_desc'>
-                This is the currnt score <span>{count}</span>
+                This is the currnt score <span>{count2}</span>
             </p>
             <div className="button_container">
                 <button
                 onClick = {() => {
-                    setCount(count +3);
+                    setCount2(count2 +3);
 
             }}
             >
@@ -55,7 +56,7 @@ return (
             </button>
             <button
                 onClick = { () => {
-                    setCount(count + 7)
+                    setCount2(count2 + 7)
 
                 } }
                 >
